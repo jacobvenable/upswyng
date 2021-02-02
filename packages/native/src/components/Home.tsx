@@ -11,6 +11,7 @@ import algoliaSearch from "algoliasearch";
 // TODO (rhinodavid): Renable this later
 // import config from "../../config";
 import debounce from "debounce";
+import { WebView } from "react-native-webview";
 
 const openAlgolia = () => {
   Linking.openURL("https://www.algolia.com");
@@ -80,7 +81,8 @@ class Home extends React.Component<{}, THomeState> {
   render() {
     return (
       <View style={styles.container}>
-        <HomeSearch
+        <WebView source={{ uri: "https://reactnative.dev/" }} />;
+        {/* <HomeSearch
           onChange={this.setSearchValue}
           value={this.state.searchBarValue}
         />
@@ -97,7 +99,7 @@ class Home extends React.Component<{}, THomeState> {
               </TouchableWithoutFeedback>
             </View>
           </>
-        )}
+        )} */}
       </View>
     );
   }
