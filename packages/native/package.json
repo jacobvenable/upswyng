@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "debounce": "^1.2.0",
     "devalue": "^2.0.0",
-    "expo": "^37.0.0",
+    "expo": "^38.0.0",
     "expo-font": "~8.1.0",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
@@ -53,19 +53,19 @@
     "@types/cli-progress": "^1.8.1",
     "@types/debounce": "^1.2.0",
     "@types/jest": "^24.0.20",
-    "@types/react": "^16.9.11",
-    "@types/react-native": "^0.60.22",
+    "@types/react": "~16.9.41",
+    "@types/react-native": "~0.62.13",
     "@types/react-native-material-ui": "^1.32.0",
     "@types/react-router-native": "^4.2.4",
     "algoliasearch": "^3.35.1",
     "autoprefixer": "^9.6.4",
-    "babel-preset-expo": "^8.1.0",
+    "babel-preset-expo": "^8.2.3",
     "expo-yarn-workspaces": "^1.2.1",
     "jest": "^24.9.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.8.3"
+    "typescript": "~3.9.5"
   },
   "rnpm": {
     "assets": [
