@@ -54,29 +54,29 @@ const styles = StyleSheet.create({
 
 const AppContents = withRouter((props: RouteComponentProps) => {
   let listener: NativeEventSubscription | null;
-  useEffect(() => {
-    // Make the Android back button make React Router go back
-    listener && listener.remove();
-    listener = BackHandler.addEventListener("hardwareBackPress", () => {
-      if (props.location.pathname === "/") {
-        return false;
-      }
-      props.history.goBack();
-      return true;
-    });
-    return () => {
-      listener && listener.remove();
-    };
-  }, [props.location.pathname]);
+  // useEffect(() => {
+  // Make the Android back button make React Router go back
+  //   listener && listener.remove();
+  //   listener = BackHandler.addEventListener("hardwareBackPress", () => {
+  //     if (props.location.pathname === "/") {
+  //       return false;
+  //     }
+  //     props.history.goBack();
+  //     return true;
+  //   });
+  //   return () => {
+  //     listener && listener.remove();
+  //   };
+  // }, [props.location.pathname]);
 
   // Font loading
   const [isReady, setReady] = useState(false);
-  useEffect(() => {
-    Font.loadAsync({
-      "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
-      "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
-    }).then(() => setReady(true));
-  });
+  // useEffect(() => {
+  //   Font.loadAsync({
+  //     "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
+  //     "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
+  //   }).then(() => setReady(true));
+  // });
 
   return isReady ? (
     <View style={styles.container}>
